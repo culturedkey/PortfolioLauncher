@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".Portfolio">
+    <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        android:theme="@style/titleToolbarText"
+        />
+    <Button
+        style="@style/buttonTheme"
+        android:text="Spotify Streamer"
+        android:id="@+id/spotifyStreamer"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:onClick="spotifyClick" />
+
+    <Button
+        style="@style/buttonTheme"
+        android:text="Scores App"
+        android:id="@+id/scores"
+        android:onClick="scoresClick"
+        android:layout_below="@+id/spotifyStreamer"
+        android:layout_alignStart="@+id/library" />
+
+    <Button
+        style="@style/buttonTheme"
+        android:text="Library App"
+        android:id="@+id/library"
+        android:onClick="libraryClick"
+        android:layout_below="@+id/scores"
+        android:layout_alignStart="@+id/buildItBigger" />
+
+    <Button
+        style="@style/buttonTheme"
+        android:text="Build It Bigger"
+        android:id="@+id/buildItBigger"
+        android:layout_below="@+id/library"
+        android:layout_centerHorizontal="true"
+        android:onClick="buildClick"/>
+
+    <Button
+        style="@style/buttonTheme"
+        android:text="XYZ Reader"
+        android:id="@+id/reader"
+        android:layout_below="@+id/buildItBigger"
+        android:layout_centerHorizontal="true"
+        android:onClick="readerClick"/>
+
+    <Button
+        style="@style/buttonTheme"
+        android:text="Capstone: My own app"
+        android:id="@+id/capstone"
+        android:layout_below="@+id/reader"
+        android:layout_centerHorizontal="true"
+        android:onClick="capstoneClick"/>
+
+</RelativeLayout>
